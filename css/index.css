@@ -1,0 +1,486 @@
+
+/* ==========================================================================
+   CSS Body
+   ========================================================================== */
+:root {
+    --colorText: #e60113;
+}
+
+body {
+    font-size: 100%;
+}
+
+.logo {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    background-color: white;
+    z-index: 9;
+    height: 5.6rem;
+    justify-content: space-between;
+    font-size: 0.9rem;
+}
+
+
+/*hide menu for mobile */
+
+.hideMenu-mobile {
+    width: 100%
+}
+
+
+/*end hide menu for mobile */
+
+
+/* header hiện lên khi scroll */
+
+.header-scroll {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9
+}
+
+.header-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 58%;
+    margin-right: 8%;
+}
+
+.header-menu__item:hover {
+    color: var(--colorText);
+}
+
+.header-menu__item:hover {
+    color: var(--colorText);
+}
+
+.header-image {
+    width: 15%;
+    margin-left: 4%;
+    height: 100%;
+}
+
+.hide-menu__item {
+    width: 15%;
+}
+
+.item-image {
+    width: 203px;
+    height: 103px;
+    object-fit: contain;
+}
+
+.item-name {
+    color: #4e657b;
+}
+
+.hide-menu__item {
+    float: left;
+}
+
+.item-name:hover {
+    color: var(--colorText);
+}
+
+.hide-menu {
+    display: none;
+    width: 80%;
+    z-index: 3;
+}
+
+.content {
+    background-color: rgb(238, 238, 238);
+}
+
+.content-product {
+    border-bottom: red 2px solid;
+}
+
+.content-product__items {
+    width: 33.33%;
+}
+
+.content-product__items-btn {
+    width: 30%;
+    background-color: var(--colorText);
+}
+
+.content-product__allBtn {
+    justify-content: space-between;
+}
+
+.icon-mess {
+    margin-right: 5%;
+}
+
+
+/* Css phần info */
+
+.info-image {
+    width: 50%;
+}
+
+.info-text {
+    font-family: "Dancing Script", sans-serif;
+    font-size: 1.3rem;
+    width: 100%;
+}
+
+.info-text-2 {
+    width: 100%;
+}
+
+.info-all__text {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.info-text__mobile {
+    display: none !important;
+}
+
+
+/* CSS introduce */
+
+.introduce-items {
+    width: 23%;
+    height: 23%;
+    margin: 20px 0;
+    object-fit: cover;
+}
+
+.introduce-items__info {
+    width: 23%;
+    height: 120px;
+    margin: 20px 0;
+    border: 1px rgb(198, 198, 198) outset;
+    border-radius: 10px;
+    box-shadow: 1px 2px 2px rgb(198, 198, 198);
+}
+
+.image-switch {
+    width: 28%;
+    height: 28%;
+    object-fit: cover;
+}
+
+
+/* css footer */
+
+.footer {
+    background-color: rgb(55, 55, 55);
+}
+
+.border-footer {
+    border-bottom: 1px white solid;
+    width: 100%;
+}
+
+
+/* Zoom ảnh */
+
+.items-image__product:hover {
+    transform: scale(1.5);
+    transition-delay: 0.1s;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-property: all;
+    display: block;
+}
+
+.unhover {
+    transform: scale(1);
+    transition-delay: 0.1s;
+    transition-duration: 3s;
+    transition-timing-function: ease;
+    transition-property: all;
+    display: block;
+}
+
+
+/*end zoom ảnh */
+
+
+/* menu hover */
+
+ul {
+    list-style: none;
+    padding: 0px;
+}
+
+.hide-menu__new {
+    z-index: 9;
+    top: 8%;
+    width: 18%;
+    right: 10%;
+    color: black;
+    border: 2px groove rgba(248, 237, 237, 0.85);
+    font-size: 0.9rem;
+}
+
+.menu-product__scroll {
+    top: 11%;
+    position: fixed !important;
+}
+
+.menu-scroll__new {
+    top: 70%!important;
+    position: fixed;
+}
+
+.hide-menu__new .new-item:hover {
+    color: red;
+    background-color: rgb(214, 209, 209);
+}
+
+.new-item {
+    color: rgba(102, 102, 102, 0.85);
+    padding: 10px 20px;
+}
+
+.hide-menu__new {
+    display: none;
+}
+
+.header-menu__item:hover .hide-menu__new {
+    display: block;
+}
+
+.hide-menu__buy {
+    z-index: 4;
+    top: 8%;
+    width: 18%;
+    right: 20%;
+    color: black;
+    border: 2px groove rgba(248, 237, 237, 0.85);
+    font-size: 0.9rem;
+}
+
+.hide-menu__buy .new-item:hover {
+    color: red;
+    background-color: rgb(214, 209, 209);
+}
+
+.hide-menu__buy {
+    display: none;
+}
+
+.header-menu__item:hover .hide-menu__buy {
+    display: block;
+}
+
+.footer-items {
+    width: 25%;
+    margin: 0px 5px;
+}
+
+.footer-logo {
+    width: 19%;
+    height: 19%;
+    object-fit: cover;
+}
+
+.footer-fanpage {
+    text-align: left !important;
+}
+
+.header-main {
+    flex-direction: row !important;
+}
+
+
+/* ==========================================================================
+   CSS Responsive
+   ========================================================================== */
+
+   @media only screen and (max-width:400px) {
+    .header-menu {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+        max-width: 95%;
+        margin: 0px auto;
+    }
+    .header-image {
+        margin: 0;
+        object-fit: cover;
+        width: 50%;
+    }
+    .menu-mobile {
+        display: block !important;
+    }
+    .content-product__items-btn {
+        width: 100%;
+        border-radius: 10px;
+        margin-right: 0px;
+    }
+    .content-product__items {
+        width: 50%;
+    }
+    .content-product__allBtn {
+        flex-direction: column;
+    }
+    .info-image {
+        width: 100%;
+    }
+    .info-all__text {
+        width: 100% !important;
+        margin: 0 !important;
+    }
+    .info-text {
+        width: 100%;
+        margin: 0!important;
+    }
+    .info-text-2 {
+        width: 100%;
+        margin: 0!important;
+    }
+    /* CSS giới thiệu  */
+    .introduce-items {
+        width: 48% !important;
+        margin: 3% 0 !important;
+    }
+    .introduce-items__info {
+        width: 48% !important;
+        margin: 3% 0 !important;
+    }
+    .image-switch:first-child {
+        display: none;
+    }
+    .image-switch:last-child {
+        display: none;
+    }
+    .image-switch {
+        width: 90%;
+    }
+    /* Css footer */
+    .footer .header-main {
+        display: flex !important;
+        flex-direction: column!important;
+        width: 100% !important;
+    }
+    .footer-logo {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+    .footer-items {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
+}
+
+
+@media screen and (min-width:1024px) {
+    .footer-items {
+        width: 24%;
+        margin: 0 18px;
+    }
+    .footer-logo {
+        width: 14%;
+    }
+}
+
+@media only screen and (min-width:410px) and (max-width:801px) {
+    .header-menu {
+        display: none;
+    }
+    .header {
+        justify-content: space-between;
+        max-width: 97%;
+        margin: 0px auto;
+    }
+    .menu-mobile {
+        display: block !important;
+    }
+    .header-image {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+    .content-product__items-btn {
+        width: 26% !important;
+    }
+    .content-product__items {
+        width: 50%;
+    }
+    .btn-info__text {
+        display: flex;
+        flex-direction: column;
+    }
+    .fa-envelope {
+        margin: 10px 0px;
+    }
+    .introduce-items {
+        width: 50%;
+        padding: 10px;
+        margin-right: 0px;
+        margin-bottom: 10px;
+    }
+    .introduce-items__info {
+        margin: 10px;
+        width: 20%;
+    }
+    .image-switch:first-child {
+        display: none;
+    }
+    .image-switch {
+        width: 43%;
+    }
+    .switch-image {
+        margin-top: 30px;
+    }
+    .info-text {
+        height: 372px;
+        width: 100%;
+        font-size: 1.6rem;
+    }
+    .info-text-2 {
+        width: 100%;
+        position: relative;
+        display: none;
+    }
+    .info-text__mobile {
+        display: block !important;
+    }
+}
+
+.bar {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0px;
+}
+
+.menu-mobile {
+    display: none;
+}
+
+
+/* Css footer */
+
+.footer .header-main {
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.footer-logo {
+    margin-bottom: 20px;
+    width: 40%;
+}
+
+.footer-items {
+    width: 40%;
+    margin-bottom: 20px;
+}
