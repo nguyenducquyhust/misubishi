@@ -1,7 +1,8 @@
-
 /* ==========================================================================
    CSS Body
    ========================================================================== */
+
+/* Khai báo biến  */
 :root {
     --colorText: #e60113;
 }
@@ -9,6 +10,8 @@
 body {
     font-size: 100%;
 }
+
+/* Header Css   */
 
 .logo {
     height: 100%;
@@ -26,25 +29,24 @@ body {
     font-size: 0.9rem;
 }
 
-
 /*hide menu for mobile */
 
 .hideMenu-mobile {
-    width: 100%
+    width: 100%;
 }
 
+.bar {
+    width: 30px;
+    height: 5px;
+    background-color: black;
+    margin: 6px 0px;
+}
+
+.menu-mobile {
+    display: none;
+}
 
 /*end hide menu for mobile */
-
-
-/* header hiện lên khi scroll */
-
-.header-scroll {
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 9
-}
 
 .header-menu {
     display: flex;
@@ -68,10 +70,6 @@ body {
     height: 100%;
 }
 
-.hide-menu__item {
-    width: 15%;
-}
-
 .item-image {
     width: 203px;
     height: 103px;
@@ -80,10 +78,6 @@ body {
 
 .item-name {
     color: #4e657b;
-}
-
-.hide-menu__item {
-    float: left;
 }
 
 .item-name:hover {
@@ -121,6 +115,22 @@ body {
     margin-right: 5%;
 }
 
+/* btn scroll */
+
+.header-scroll {
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9;
+}
+/* 
+   end btn scroll  
+*/
+
+/*======================================
+    end header css
+  ======================================
+*/
 
 /* Css phần info */
 
@@ -148,7 +158,6 @@ body {
     display: none !important;
 }
 
-
 /* CSS introduce */
 
 .introduce-items {
@@ -173,19 +182,6 @@ body {
     object-fit: cover;
 }
 
-
-/* css footer */
-
-.footer {
-    background-color: rgb(55, 55, 55);
-}
-
-.border-footer {
-    border-bottom: 1px white solid;
-    width: 100%;
-}
-
-
 /* Zoom ảnh */
 
 .items-image__product:hover {
@@ -206,12 +202,15 @@ body {
     display: block;
 }
 
-
 /*end zoom ảnh */
 
-
 /* menu hover */
-
+.hide-menu__item {
+    width: 15%;
+}
+.hide-menu__item {
+    float: left;
+}
 ul {
     list-style: none;
     padding: 0px;
@@ -233,7 +232,7 @@ ul {
 }
 
 .menu-scroll__new {
-    top: 70%!important;
+    top: 70% !important;
     position: fixed;
 }
 
@@ -278,11 +277,39 @@ ul {
     display: block;
 }
 
+.header-main {
+    flex-direction: row !important;
+}
+
+/*  =================================== 
+    End hide menu  
+    ===================================
+*/
+
+/* css footer */
+
+.footer {
+    background-color: rgb(55, 55, 55);
+    padding-bottom: 1%;
+}
+
+.border-footer {
+    border-bottom: 1px white solid;
+    width: 100%;
+}
+
 .footer-items {
     width: 25%;
     margin: 0px 5px;
 }
 
+.footer-menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: white;
+}
 .footer-logo {
     width: 19%;
     height: 19%;
@@ -293,16 +320,22 @@ ul {
     text-align: left !important;
 }
 
-.header-main {
-    flex-direction: row !important;
-}
+/* ===============================================
 
+   End Footer CSS 
+   ===============================================
+
+   */
 
 /* ==========================================================================
    CSS Responsive
    ========================================================================== */
 
-   @media only screen and (max-width:400px) {
+/* Css cho thiết bị có màn hình  600px đổ xuống  */
+
+@media only screen and (max-width: 599.98px) {
+    /* header  */
+
     .header-menu {
         display: none;
     }
@@ -316,9 +349,15 @@ ul {
         object-fit: cover;
         width: 50%;
     }
+
+    /* menu moblie  */
+
     .menu-mobile {
         display: block !important;
     }
+
+    /* Danh sách sản phẩm  */
+
     .content-product__items-btn {
         width: 100%;
         border-radius: 10px;
@@ -330,6 +369,9 @@ ul {
     .content-product__allBtn {
         flex-direction: column;
     }
+
+    /* Đoạn văn giới thiệu  */
+
     .info-image {
         width: 100%;
     }
@@ -339,12 +381,13 @@ ul {
     }
     .info-text {
         width: 100%;
-        margin: 0!important;
+        margin: 0 !important;
     }
     .info-text-2 {
         width: 100%;
-        margin: 0!important;
+        margin: 0 !important;
     }
+
     /* CSS giới thiệu  */
     .introduce-items {
         width: 48% !important;
@@ -363,10 +406,11 @@ ul {
     .image-switch {
         width: 90%;
     }
+
     /* Css footer */
     .footer .header-main {
         display: flex !important;
-        flex-direction: column!important;
+        flex-direction: column !important;
         width: 100% !important;
     }
     .footer-logo {
@@ -374,23 +418,15 @@ ul {
         margin-bottom: 20px;
     }
     .footer-items {
-        width: 100% !important;
+        width: 69% !important;
         margin-bottom: 20px;
+        justify-content: center;
     }
 }
 
+/* CSS responsive cho màn hình 600px đến 1024px */
 
-@media screen and (min-width:1024px) {
-    .footer-items {
-        width: 24%;
-        margin: 0 18px;
-    }
-    .footer-logo {
-        width: 14%;
-    }
-}
-
-@media only screen and (min-width:410px) and (max-width:801px) {
+@media only screen and (min-width: 600px) and (max-width: 1023.98px) {
     .header-menu {
         display: none;
     }
@@ -452,35 +488,18 @@ ul {
     .info-text__mobile {
         display: block !important;
     }
-}
-
-.bar {
-    width: 30px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0px;
-}
-
-.menu-mobile {
-    display: none;
-}
-
-
-/* Css footer */
-
-.footer .header-main {
-    display: flex !important;
-    flex-direction: row;
-    width: 100%;
-    flex-wrap: wrap;
-}
-
-.footer-logo {
-    margin-bottom: 20px;
-    width: 40%;
-}
-
-.footer-items {
-    width: 40%;
-    margin-bottom: 20px;
+    .footer-logo {
+        width: 100%;
+        height: 100%;
+        margin-bottom: 20px;
+    }
+    .footer-menu {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        grid-gap: 3%;
+    }
+    .footer-items {
+        width: 100% !important;
+        margin-bottom: 20px;
+    }
 }
