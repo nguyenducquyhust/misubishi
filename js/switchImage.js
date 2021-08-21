@@ -104,3 +104,11 @@ function preImage() {
         image[2].src = `../image/` + arrImage2[2].url;
     }
 }
+
+setInterval(function () {
+
+    switchImage();
+    nextImage();
+    preImage();
+
+},2000);
