@@ -8,6 +8,7 @@
 
 body {
     font-size: 100%;
+
 }
 
 .logo {
@@ -207,6 +208,15 @@ body {
 .border-footer {
     border-bottom: 1px white solid;
     width: 100%;
+}
+
+.footer-logo {
+    flex : 1;
+    width: 20% !important;
+}
+
+.footer-logo ~ div {
+    flex: 2;
 }
 
 
