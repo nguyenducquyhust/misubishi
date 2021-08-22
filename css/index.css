@@ -124,6 +124,30 @@ body {
 
 
 /* Css phần info */
+.introduce-row{
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+    display: flex;
+}
+.introduce-row__col-half{
+    width: 50%;
+    text-align: center;
+}
+.introduce-row .news__img{
+    width: 90%;
+}
+.news-block__description{
+    margin-top:1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+.news--description__style:hover{
+    color:var(--colorText);
+}
+.news--description__style{
+    font-weight: 500;
+    font-size: 1.4rem;
+}
 
 .info-image {
     width: 50%;
