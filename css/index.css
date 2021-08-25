@@ -92,7 +92,7 @@ body {
 }
 
 .hide-menu {
-    display: none;
+    
     width: 80%;
     z-index: 3;
 }

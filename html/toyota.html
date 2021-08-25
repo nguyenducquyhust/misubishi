@@ -13,6 +13,8 @@
         integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
     <title>Document</title>
     <link rel="stylesheet" href="../css/toyota.css" class="">
+    <link rel="stylesheet" href="../css/responsive.css">
+    <link rel="stylesheet" href="../css/icon.css">
     <style class="">
         :root {
             --colorRed: #c8102e;
@@ -46,48 +48,102 @@ body{
 </head>
 
 <body>
-    <div class="header">
-        <div class="header-search">
-            <div class="container">
-                <div class="header-menu__logo">
-                    <img src="https://www.toyota.com.vn/Content/images/logo.png " alt=" " class="logo ">
-                </div>
-                <div class="header-menu__item h-100">
-                    <input type="text" class="input-search" placeholder="Tìm kiếm">
-                    <label for="input-search" class="btn-search">
-                        <img src="https://www.toyota.com.vn/Content/images/icon_search_sm.png " alt=" " class=" ">
-                        </labela>
-                        <img src="https://www.toyota.com.vn/Content/images/icon-tmv-facebook.png" alt="" class="a">
-                        <img src="https://www.toyota.com.vn/Content/images/icon-tmv-youtube.png " alt="" class="a">
-                </div>
+    <div class="header ">
+        <!--btn Menu for mobile -->
+        <div class="menu-mobile">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <!-- Menu for Pc -->
+        <div class="header-image">
+            <img src="../image/logo_viethung.png" alt=" " class="logo">
+        </div>
+        <div class="header-menu text-uppercase">
+            <div class="header-menu__item">
+                <b class="text-danger">Trang chủ </b>
+            </div>
+            <div class="header-menu__item">
+                <ul class="">
+                    <b class="" style = "line-height: 5.6rem;" >Sản phẩm</b>
+                        <div class="hide-menu position-absolute btn-light text-center ">
+                            <li class="hide-menu__item ">
+                                <img class="item-image " src="../image/NEW-TRITON.png " alt=" " class="">
+                                <p class="text-uppercase text-center item-name ">New Triton</p>
+                            </li>
+                            <li class="hide-menu__item ">
+                                <img class="item-image " src="../image/NEW-OUTLANDER.png " alt=" " class="">
+                                <p class="text-uppercase text-center item-name ">New outlander</p>
+                            </li>
+                            <li class="hide-menu__item ">
+                                <img class="item-image " src="../image/NEW-ATTRAGE.png " alt=" " class=" ">
+                                <p class="text-uppercase text-center item-name ">New attrage</p>
+                            </li>
+                            <li class="hide-menu__item ">
+                                <img class="item-image " src="../image/NEW-PAJERO-SPORT.png " alt=" " class="">
+                                <p class="text-uppercase text-center item-name ">New pajero sport</p>
+                            </li>
+                            <li class="hide-menu__item ">
+                                <img class="item-image " src="../image/NEW-XPANDER.png " alt=" " class="">
+                                <p class="text-uppercase text-center item-name ">New xpander</p>
+                            </li>
+                            <li class="hide-menu__item ">
+                                <img class="item-image " src="../image/XPANDER-CROSS.png " alt=" " class="">
+                                <p class="text-uppercase text-center item-name "> new Xpander cross</p>
+                            </li>
+                        </div>
+                </ul>
+            </div>
+            <div class=" header-menu__item ">
+                <b class="" style = "line-height: 5.6rem;" >Bảng giá xe và khuyến mãi </b>
+            </div>
+            <div class="header-menu__item ">
+                <ul class="">
+                    <b class="" style = "line-height: 5.6rem;" >Mua xe trả góp </b>
+                    <div class=" hide-menu__buy  position-absolute bg-white ">
+                        <li class="new-item">mua xe trả góp</li>
+                        <li class="new-item"> mua xe theo lô</li>
+                        <li class="new-item"> quy trình đăng ký mua xe</li>
+                        <li class="new-item"> Đăng ký lái thử</li>
+                        <li class="new-item"> Báo giá chi tiết</li>
+                    </div>
+                </ul>
+            </div>
+            <!--  hide menu for new -->
+            <div class="header-menu__item ">
+                <ul class="">
+                    <b class="" style = "line-height: 5.6rem;"  >Tin tức </b>
+                    <div class=" hide-menu__new  position-absolute bg-white ">
+                        <li class="new-item">Sư kiện nổi bật</li>
+                        <li class="new-item"> Tin Dịch vụ</li>
+                        <li class="new-item"> Tin Tổng hợp</li>
+                        <li class="new-item"> Tin tuyển dụng</li>
+                        <li class="new-item"> Tin khuyến mãi</li>
+                        <li class="new-item"> Bảo dưỡng định kỳ</li>
+                        <li class="new-item"> Chính sách bảo hành</li>
+                        <li class="new-item"> Cứu hộ giao thông</li>
+                        <li class="new-item">Giới thiệu dịch vụ</li>
+                        <li class="new-item">Sửa chữa</li>
+                        <li class="new-item">Đặt lịch bảo dưỡng</li>
+                    </div>
+                </ul>
+                <!-- end hide menu for new -->
+            </div>
+            <div class="header-menu__item ">
+                <b class="" style = "line-height: 5.6rem;" >Liên hệ </b>
             </div>
         </div>
-        <div class="header-menu">
-            <div class="container d-flex align-items-center h-100">
-                <div class="header-menu__list">
-                    <ul class="text-uppercase menu-ul">
-                        <li class="menu-li">về toyota vn</li>
-                        <li class="menu-li">sản phẩm</li>
-                        <li class="menu-li">dịch vụ</li>
-                        <li class="menu-li">giá trị gia tăng</li>
-                        <li class="menu-li">công nghệ </li>
-                        <li class="menu-li">tin tức</li>
-                    </ul>
-                </div>
-                <div class="">
-                    <img src="https://www.toyota.com.vn/Content/images/icon-tmv-find-dealer.png" alt="" class="">
-                    <button type="button" class="btn text-light pl-4 pr-4 btn-sm ml-3"
-                        style="background-color: var(--colorBtn);"><b class="">Tìm đại lý</b></button>
-                </div>
-
-            </div>
+        <!-- btn cart for mobile -->
+        <div class="menu-mobile">
+            <i class="fa fa-cart-plus" aria-hidden="true"></i>
         </div>
     </div>
-    <div class="slide">
-        <img src="https://www.toyota.com.vn/data/news/8712/mokola.jpg?w=1436&h=315&mode=crop" alt=""
-            class="slide-image">
-
+    <div class="d-flex justify-content-center " style="width: 100%;margin: 0px auto; ">
+        <div class="slide">
+            <img src="https://www.toyota.com.vn/data/news/8712/mokola.jpg?w=1436&h=315&mode=crop" alt=""
+                class="slide-image">
+    
+        </div>
     </div>
+    
     <!-- menu  -->
     <div class="menu-info table-bordered">
         <div class="container menu-info__list ">
