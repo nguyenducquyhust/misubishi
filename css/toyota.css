@@ -324,39 +324,66 @@ ul {
     width: 50%;
 }
 
-.item-color-1 {
-    background-color: rgb(162, 38, 0);
-    height: 37%;
+.changeCar {
+    position: relative;
+    width: 100%;
+    /* height: 100%; */
+    background-color: rgb(246, 246, 246);
 }
-
-.item-color-2 {
-    background-color: rgb(236, 237, 237);
-    height: 37%;
+.slider {
+    width: 100%;
+    /* height: 26rem; */
+    /* background-color: red; */
+    overflow: hidden;
 }
-
-.item-color-3 {
-    background-color: rgb(179, 5, 6);
-    height: 37%;
+.slider > div {
+    width: 300%;
+    height: 100%;
+    transition: 0.5s;
 }
-
-.item-color-4 {
-    background-color: rgb(37, 37, 38);
-    height: 37%;
+.slider__img {
+    width: 100%;
+    height: 100%;
 }
-
-.item-color-5 {
-    background-color: rgb(27, 29, 30);
-    height: 37%;
+.slider__img > img {
+    width: 100%;
+    height: 100%;
 }
-
-.item-color-6 {
-    background-color: rgb(186, 189, 193);
-    height: 37%;
+label {
+    display: block;
+    width: 20%;
+    height: 100%;
+    transition: 0.3s;
+    cursor: pointer;
 }
-
-.item-color-7 {
-    background-color: rgb(223, 206, 13);
-    height: 37%;
+.changeCar__btn {
+    width: 10rem;
+    height: 2rem;
+    position: absolute;
+    top: 100%;
+}
+label:hover {
+    transform: scale(1.2);
+}
+input {
+    display: none;
+}
+#red {
+    background-color:red;
+}
+#orange {
+    background-color:orange;
+}#blue {
+    background-color:blue;
+}
+#changeColor1:checked ~ .slider>div {
+    margin-left: 0;
+}
+#changeColor2:checked ~ .slider>div {
+    margin-left: -100%;
+}
+#changeColor3:checked ~ .slider>div {
+    margin-left: -200%;
 }
 
 
