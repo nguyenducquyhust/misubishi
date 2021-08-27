@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="../css/toyota.css" class="">
     <link rel="stylesheet" href="../css/responsive.css">
     <link rel="stylesheet" href="../css/icon.css">
+    <link rel="stylesheet" href="../themify-icons/themify-icons.css">
     <style class="">
         :root {
             --colorRed: #c8102e;
@@ -252,7 +253,7 @@ body{
                 <li class="li-info"> Thông tin khác:</li>
                 <p class="li-info">+ Số sàn 5 cấp</p>
                 <div class="d-flex flex-lg-row flex-md-column">
-                    <button type="button" class="btn-1"> Đăng ký lái thử</button>
+                    <button type="button" class="btn-1 js-register-car"> Đăng ký lái thử</button>
                     <button type="button" class="btn-2"> So sánh</button>
                 </div>
             </div>
@@ -956,6 +957,63 @@ body{
                 </div>
             </div>
         </div>
+    </div>
+    <!--
+        ======================================================
+
+                    MODAL REGISTER
+
+        ======================================================
+    -->
+    <div class="modal-register js-modal ">
+        <div class="modal-container js-modal-container">
+            <div class="modal-close">
+                <i class="ti-close icon-close js-modal-close"></i>
+            </div>
+            <div class="header-modal">
+                <div class="text-uppercase text-center" style="color: red; font-size:2rem; font-weight: 500;">Đăng ký lái thử</div>
+                <div class="text-center text-description">Đăng ký nhận báo giá đặc biệt và các chương trình ưu đãi hấp dẫn</div>
+            </div>
+
+            <div class="modal-body">
+                <div class="body-select-car">
+                    <div class="text-description"><i class="ti-car icon-modal"></i>Chọn loại xe</div>
+                    <select name="cars" id="" style="padding-left: 0.3rem;">
+                        <option value="New Outlander">New Outlander-1</option>
+                        <option value="New Outlander">New Outlander-2</option>
+                        <option value="New Outlander">New Outlander-3</option>
+                    </select>
+                </div>
+                
+                
+                <div class="body-input-email">
+                    <div class="body-email">
+                        <div class="text-description"><i class="ti-user icon-modal"></i>Họ và tên</div>
+                        <input type="Email" placeholder="Email ...">
+                    </div>
+                </div>
+
+                <div class="body-input-phonenumber">
+                    <div class="body-phonenumber">
+                        <div class="text-description"><i class="ti-mobile icon-modal"></i>Điện thoại</div>
+                        <input type="Phone" placeholder="Số điện thoại...">
+                    </div>
+                </div>
+
+                <div class="body-input-content">
+                    <div class="body-content">
+                        <div class="text-description"><i class="ti-pencil-alt icon-modal"></i>Nội dung</div>
+                        <input type="content" placeholder="Nội dung ...">
+                    </div>
+                </div>
+
+                <div class="button-register">
+                    <div><i class="ti-new-window icon-modal"></i>Đăng ký ngay</div>
+                </div>
+
+            </div>
+        </div>    
+        
     </div>
     <!-- Optional JavaScript but it is better to add it-->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->

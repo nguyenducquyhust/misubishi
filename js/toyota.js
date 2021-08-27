@@ -59,3 +59,24 @@
         accessoryListExterior.hide()
     })
 }())
+// click vao đăng ký lái thử mở lên bảng đắng kí
+    const buyBtns = document.querySelectorAll('.js-register-car')
+    const modal = document.querySelector('.js-modal')
+    const modalClose = document.querySelector('.js-modal-close')
+    const modalContatiner = document.querySelector('.js-modal-container')
+    function showBuyTickets(){
+        modal.classList.add('open')
+    }
+    function hideBuyTickets(){
+        modal.classList.remove('open')
+    }
+
+    for (const buyBtn of buyBtns){
+        buyBtn.addEventListener('click', showBuyTickets)
+    }
+
+    modalClose.addEventListener('click', hideBuyTickets)
+    modal.addEventListener('click', hideBuyTickets)
+    modalContatiner.addEventListener('click', function(event) {
+        event.stopPropagation()
+    })

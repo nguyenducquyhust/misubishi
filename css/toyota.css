@@ -648,3 +648,134 @@ Catalogue */
     display:grid;
     grid-template-columns:  repeat(auto-fit,minmax(175px,1fr)) ;
 }
+/* MODAL REGISTER */
+.modal-register{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+    z-index: 100;
+    background-color: rgba(0,0,0,0.4);
+    display: none;
+    
+}
+.modal-register.open{
+    display: flex;
+}
+
+.modal-container{
+    width: 70rem;
+    min-height: 40rem;
+    background-color: rgb(51, 26, 26);
+    position: relative;
+    margin: auto;
+    top: 1rem;
+    right: 0;
+    bottom: 1rem;
+    left: 0;
+    z-index: 10000;
+    padding: 1.25rem 2.5rem;
+    box-sizing: border-box;
+    border-radius: 2rem;
+    animation: modalFadeIn ease 0.5s;
+}
+
+@keyframes modalFadeIn {
+    from{
+        opacity: 0;
+        transform: translateY(-140px);
+    }
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+ .text-description{
+    color: white;
+    font-size: 1.3rem;
+    padding-top: 0.6rem;
+    padding-bottom: 0.6rem;
+    line-height: 2rem;
+    padding-left: 0.6rem;
+}
+
+.modal-body .body-select-car select{
+    background-color: #ffffff;
+    height: 2.5rem;
+    box-sizing: border-box;
+}
+.body-select-car{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.25rem;
+}
+.body-email,.body-content,
+.body-phonenumber{
+    display: flex;
+    flex-direction: column;
+    padding-top: 1.25rem;
+}
+.body-phonenumber input
+{
+    background-color: #ffffff;
+    height: 2.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding-left: 0.6rem;
+}
+.body-email input
+{
+    background-color: #ffffff;
+    height: 2.5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding-left: 0.6rem;
+}
+.body-content input
+{
+    background-color: #ffffff;
+    height: 5rem;
+    box-sizing: border-box;
+    font-size: 1rem;
+    padding-left: 0.6rem;
+}
+.button-register div{
+    font-size: 1rem;
+    background-color: red;
+    width: 30%;
+    color: white;
+    height: 3rem;
+    text-align: center;
+    line-height: 3rem;
+    border-radius: 1rem;
+}
+.button-register{
+    padding-top: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.modal-register .icon-modal{
+    padding-right: 0.6rem;
+    font-size: 1.5rem;
+}
+.modal-register .icon-close{
+    font-size: 1.25rem;
+    color: white;
+    opacity: 0.8;
+    float: right;
+}
+.button-register:hover{
+    cursor: pointer;
+}
+.icon-close{
+    opacity: 0.8;
+}
+.icon-close:hover{
+    opacity: 1;
+    cursor: pointer;
+}
